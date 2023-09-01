@@ -4,4 +4,33 @@
 
 :root { }
 
-body { }
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: aquamarine;
+    padding: 1em;
+}
+
+main {
+    border: solid red 3px;
+    background-color: aqua;
+
+    flex: 1;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0.2em;
+}
+
+section {
+    border: solid black 0.2em;
+}
+
+
