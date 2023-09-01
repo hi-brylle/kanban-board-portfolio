@@ -34,3 +34,17 @@ Functionality
 			+ From "In Testing" to "Backlog"
 + Persistence
 	+ Supabase (with realtime features?) f6XiU9FTenqSODXH
+
+MVP
++ User sign up
+	+ username
+	+ password
+	+ role
++ User log in
+	+ authentication best practices
++ Project creation
+	+ Project Manager-only capability
+	+ Name and Description
+	+ Link available to PM only
++ Project joining
+	+ Devs and Testers can join via the project link
