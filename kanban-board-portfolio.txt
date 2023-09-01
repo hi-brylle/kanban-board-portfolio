@@ -1,0 +1,36 @@
+Kanban board portfolio
+
+UI
++ Opening modal
+	+ Create Project (for PMs only)
+	+ Join Project (for Devs and Testers only)
++ Columns
+	+ Backlog
+	+ In Progress
+	+ Implemented
+	+ In Testing
+	+ Tested
++ Task
+	+ draggable component (possible destination is based on user type)
+	+ Task Description
+	+ Task Author
+
+Functionality
++ User types
+	+ Project Manager
+		+ Can create projects
+		+ Can add Tasks
+		+ Cannot move Tasks
+	+ Dev
+		+ Can join projects
+		+ Can move Tasks, strictly:
+			+ From "Backlog" to "In Progress"
+			+ From "In Progress" to "Implemented"
+	+ Tester
+		+ Can join projects
+		+ Can move Tasks, strictly:
+			+ From "Implemented" to "In Testing"
+			+ From "In Testing" to "Tested"
+			+ From "In Testing" to "Backlog"
++ Persistence
+	+ Supabase (with realtime features?)
